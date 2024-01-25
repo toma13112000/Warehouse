@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" name="untitled.main:javaEEApplication exploded">
+    <output-path>$PROJECT_DIR$/../../../../Program Files/Java/openlogic-openjdk-jre-8u392-b08-windows-64/artifacts/untitled_main_javaEEApplication_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="untitled.main/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

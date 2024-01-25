@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'war'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.26'
+    implementation 'javax:javaee-api:8.0'
+    implementation 'org.jboss.weld.se:weld-se-core:3.1.5.Final'
+    implementation 'org.jboss.spec.javax.ejb:jboss-ejb-api_3.2_spec:1.0.2.Final'
+    implementation 'org.eclipse.persistence:eclipselink:2.7.7'
+    implementation 'org.projectlombok:lombok:1.18.24'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:6.2.2.jre7'
+    implementation 'org.slf4j:slf4j-api:1.7.32'
+}
+
+application {
+    mainClassName = 'org.example.Main'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(8)
+    }
+}
